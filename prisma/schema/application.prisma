@@ -1,0 +1,24 @@
+// ─────────────────────────────────────────────────────────────────────────────
+// Application — đơn đăng ký tham gia dự án
+// ─────────────────────────────────────────────────────────────────────────────
+
+/// Đơn đăng ký của learner vào một vai trò cụ thể trong dự án
+model Application {
+  id        String            @id @default(cuid())
+  projectId String
+  userId    String
+  role      MemberRole        // Vai trò muốn đăng ký
+  message   String?           // Lời giới thiệu / lý do tham gia
+  status    ApplicationStatus @default(PENDING)
+  createdAt DateTime          @default(now())
+  updatedAt DateTime          @updatedAt
+
+  project Project @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  user    User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  // Mỗi user chỉ đăng ký 1 lần / dự án (bất kể vai trò)
+  @@unique([projectId, userId])
+  @@index([userId])               // Đơn của tôi
+  @@index([projectId, status])    // Đơn chờ duyệt theo dự án
+  @@map("applications")
+}

@@ -1,0 +1,24 @@
+// ─────────────────────────────────────────────────────────────────────────────
+// Portfolio — sản phẩm hoàn chỉnh lưu vào hồ sơ cá nhân
+// ─────────────────────────────────────────────────────────────────────────────
+
+/// Portfolio item — dự án hoàn thành được lưu vào trang cá nhân
+model Portfolio {
+  id        String   @id @default(cuid())
+  userId    String
+  projectId String
+  title     String
+  summary   String
+  demoUrl   String?  // Link demo sản phẩm
+  repoUrl   String?  // Link source code / Figma
+  coverUrl  String?
+  isPublic  Boolean  @default(true)
+  createdAt DateTime @default(now())
+
+  user    User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+  project Project @relation(fields: [projectId], references: [id], onDelete: Cascade)
+
+  // Mỗi user chỉ có 1 portfolio entry / dự án
+  @@unique([userId, projectId])
+  @@map("portfolios")
+}

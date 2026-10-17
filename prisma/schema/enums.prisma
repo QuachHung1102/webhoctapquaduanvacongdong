@@ -1,0 +1,77 @@
+// ─────────────────────────────────────────────────────────────────────────────
+// Enums — tập trung tất cả enum vào một file để dễ tra cứu
+// ─────────────────────────────────────────────────────────────────────────────
+
+/// Quyền hệ thống của người dùng
+enum UserRole {
+  LEARNER
+  MENTOR
+  ADMIN
+}
+
+/// Lĩnh vực của dự án
+enum ProjectCategory {
+  APP       // Lập trình App
+  DESIGN    // Thiết kế Website
+  VIDEO     // Video Marketing
+  PRODUCT   // Sản phẩm Số
+}
+
+/// Trạng thái vòng đời dự án
+enum ProjectStatus {
+  RECRUITING  // Đang tuyển thành viên
+  IN_PROGRESS // Đang thực hiện
+  REVIEWING   // Đang review cuối
+  COMPLETED   // Đã hoàn thành
+  UPCOMING    // Sắp mở đăng ký
+  CANCELLED   // Đã huỷ
+}
+
+/// Vai trò trong nhóm dự án
+enum MemberRole {
+  LEADER
+  DEVELOPER
+  MOBILE_DEV
+  FULLSTACK_DEV
+  BACKEND_DEV
+  FRONTEND_DEV
+  DESIGNER
+  CONTENT_CREATOR
+  VIDEO_EDITOR
+  MOTION_DESIGNER
+  PRODUCT_MANAGER
+  QA
+  CREATIVE_DIRECTOR
+  SCRIPT_WRITER
+}
+
+/// Mức độ khó của dự án
+enum Difficulty {
+  BEGINNER      // Cơ bản
+  INTERMEDIATE  // Trung bình
+  ADVANCED      // Nâng cao
+}
+
+/// Trạng thái đơn đăng ký tham gia dự án
+enum ApplicationStatus {
+  PENDING
+  ACCEPTED
+  REJECTED
+  WITHDRAWN
+}
+
+/// Trạng thái task
+enum TaskStatus {
+  TODO
+  IN_PROGRESS
+  IN_REVIEW
+  DONE
+}
+
+/// Độ ưu tiên task
+enum TaskPriority {
+  LOW
+  MEDIUM
+  HIGH
+  URGENT
+}

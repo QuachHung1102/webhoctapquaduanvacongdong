@@ -1,0 +1,22 @@
+[
+  {
+    "name": "First Project",
+    "description": "Hoàn thành dự án đầu tiên của bạn trên nền tảng."
+  },
+  {
+    "name": "Team Player",
+    "description": "Đóng góp tích cực vào ít nhất 3 dự án nhóm."
+  },
+  {
+    "name": "Fast Learner",
+    "description": "Hoàn thành 5 kỹ năng mới trong vòng 30 ngày."
+  },
+  {
+    "name": "Portfolio Builder",
+    "description": "Thêm 3 dự án vào hồ sơ cá nhân."
+  },
+  {
+    "name": "Mentor Approved",
+    "description": "Nhận đánh giá 5 sao từ mentor sau khi hoàn thành dự án."
+  }
+]

@@ -1,0 +1,40 @@
+// ─────────────────────────────────────────────────────────────────────────────
+// User — tài khoản người dùng (learner, mentor, admin)
+// ─────────────────────────────────────────────────────────────────────────────
+
+model User {
+  id                 String   @id @default(cuid())
+  email              String   @unique
+  username           String?  @unique  // Slug URL: /u/[username]
+  passwordHash       String
+  name               String
+  avatarUrl          String?
+  bio                String?
+  role               UserRole @default(LEARNER)
+  isVerified         Boolean  @default(false)
+  securityQuestion   String?  // Câu hỏi bảo mật để lấy lại mật khẩu
+  securityAnswerHash String?  // Câu trả lời đã được hash
+  createdAt          DateTime @default(now())
+  updatedAt          DateTime @updatedAt
+
+  // ── Learner relations ──
+  applications    Application[]
+  memberships     ProjectMember[]
+  tasksAssigned   Task[]         @relation("AssignedTasks")
+  tasksCreated    Task[]         @relation("CreatedTasks")
+  portfolio       Portfolio[]
+  reviewsGiven    Review[]       @relation("ReviewsGiven")
+  reviewsReceived Review[]       @relation("ReviewsReceived")
+  badgesEarned    UserBadge[]
+  skillsTagged    UserSkill[]
+
+  // ── Mentor relations ──
+  projectsMentoring Project[]      @relation("MentorProjects")
+  mentorReviews     MentorReview[] @relation("MentorReviewed")   // Review nhận được
+  mentorReviewsLeft MentorReview[] @relation("MentorReviewer")   // Review đã viết
+
+  // ── Notifications ──
+  notifications Notification[]
+
+  @@map("users")
+}

@@ -1,0 +1,73 @@
+// ─────────────────────────────────────────────────────────────────────────────
+// Project — dự án thực tế và thành viên trong nhóm
+// ─────────────────────────────────────────────────────────────────────────────
+
+/// Dự án — đơn vị học tập cốt lõi của hệ thống
+model Project {
+  id            String          @id @default(cuid())
+  slug          String          @unique // URL-friendly, e.g. "app-quan-ly-chi-tieu"
+  title         String
+  description   String
+  outputGoal    String          // Mô tả output/deliverable mong muốn
+  category      ProjectCategory
+  status        ProjectStatus   @default(RECRUITING)
+  difficulty    Difficulty      @default(INTERMEDIATE)
+  timeline      Int             // Thời lượng (tuần)
+  maxMembers    Int
+  startDate     DateTime?
+  endDate       DateTime?
+  coverImageUrl String?
+  outputUrl     String?         // Link demo/repo khi dự án hoàn thành
+  createdAt     DateTime        @default(now())
+  updatedAt     DateTime        @updatedAt
+
+  // Mentor phụ trách
+  mentorId String
+  mentor   User   @relation("MentorProjects", fields: [mentorId], references: [id])
+
+  // Relations
+  members      ProjectMember[]
+  applications Application[]
+  tasks        Task[]
+  skills       ProjectSkill[]
+  sprints      Sprint[]
+  reviews      Review[]
+  portfolios   Portfolio[]
+
+  @@index([status])
+  @@index([category])
+  @@index([mentorId])
+  @@index([status, category])
+  @@index([difficulty])
+  @@map("projects")
+}
+
+/// Kỹ năng yêu cầu của dự án (many-to-many)
+model ProjectSkill {
+  projectId String
+  skillId   String
+
+  project Project @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  skill   Skill   @relation(fields: [skillId], references: [id], onDelete: Cascade)
+
+  @@id([projectId, skillId])
+  @@map("project_skills")
+}
+
+/// Thành viên đã được duyệt vào nhóm dự án
+model ProjectMember {
+  id        String     @id @default(cuid())
+  projectId String
+  userId    String
+  role      MemberRole
+  joinedAt  DateTime   @default(now())
+  isActive  Boolean    @default(true)
+
+  project Project @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  user    User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([projectId, userId])
+  @@index([userId])          // Tìm "dự án của tôi" nhanh
+  @@index([projectId])       // Tìm thành viên của dự án
+  @@map("project_members")
+}

@@ -1,0 +1,13 @@
+// ─────────────────────────────────────────────────────────────────────────────
+// Generator & Datasource
+// In Prisma 7, the connection URL is configured in prisma.config.ts only.
+// ─────────────────────────────────────────────────────────────────────────────
+
+generator client {
+  provider = "prisma-client"
+  output   = "../../app/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}

@@ -1,0 +1,21 @@
+[
+  { "name": "React Native",  "category": "Mobile" },
+  { "name": "Flutter",       "category": "Mobile" },
+  { "name": "Next.js",       "category": "Frontend" },
+  { "name": "Node.js",       "category": "Backend" },
+  { "name": "Express",       "category": "Backend" },
+  { "name": "MongoDB",       "category": "Database" },
+  { "name": "PostgreSQL",    "category": "Database" },
+  { "name": "Prisma",        "category": "Database" },
+  { "name": "Firebase",      "category": "Backend" },
+  { "name": "Stripe",        "category": "Payment" },
+  { "name": "Figma",         "category": "Design" },
+  { "name": "Tailwind CSS",  "category": "Frontend" },
+  { "name": "After Effects", "category": "Video" },
+  { "name": "Premiere Pro",  "category": "Video" },
+  { "name": "Shopify",       "category": "Ecommerce" },
+  { "name": "SEO",           "category": "Marketing" },
+  { "name": "Copywriting",   "category": "Content" },
+  { "name": "UI/UX",         "category": "Design" },
+  { "name": "Marketing",     "category": "Marketing" }
+]

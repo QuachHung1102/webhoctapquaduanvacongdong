@@ -1,0 +1,142 @@
+[
+  {
+    "projectId": "seed-proj-1",
+    "userEmail": "learner.hoa@projecthub.vn",
+    "role": "DESIGNER",
+    "message": "Tôi có kinh nghiệm Figma 1 năm và muốn thiết kế UI cho app này.",
+    "status": "ACCEPTED"
+  },
+  {
+    "projectId": "seed-proj-1",
+    "userEmail": "learner.khoa@projecthub.vn",
+    "role": "MOBILE_DEV",
+    "message": "Tôi đã học React Native 6 tháng và muốn thực hành trên dự án thực tế.",
+    "status": "ACCEPTED"
+  },
+  {
+    "projectId": "seed-proj-1",
+    "userEmail": "learner.duc@projecthub.vn",
+    "role": "BACKEND_DEV",
+    "message": "Backend Node.js là thế mạnh của tôi, tôi muốn xây dựng API cho app.",
+    "status": "ACCEPTED"
+  },
+  {
+    "projectId": "seed-proj-2",
+    "userEmail": "learner.mai@projecthub.vn",
+    "role": "DESIGNER",
+    "message": "Thiết kế web là đam mê của tôi, tôi muốn tạo ra landing page đẹp.",
+    "status": "ACCEPTED"
+  },
+  {
+    "projectId": "seed-proj-2",
+    "userEmail": "learner.khoa@projecthub.vn",
+    "role": "FRONTEND_DEV",
+    "message": "Tôi biết Next.js và Tailwind, muốn implement design từ Figma.",
+    "status": "PENDING"
+  },
+  {
+    "projectId": "seed-proj-3",
+    "userEmail": "learner.hoa@projecthub.vn",
+    "role": "FRONTEND_DEV",
+    "message": "Tôi đang học Next.js và muốn đóng góp vào SaaS product thực tế.",
+    "status": "ACCEPTED"
+  },
+  {
+    "projectId": "seed-proj-3",
+    "userEmail": "learner.duc@projecthub.vn",
+    "role": "BACKEND_DEV",
+    "message": "PostgreSQL + Prisma là stack tôi đang tập trung, dự án này rất phù hợp.",
+    "status": "ACCEPTED"
+  },
+  {
+    "projectId": "seed-proj-4",
+    "userEmail": "learner.tuan@projecthub.vn",
+    "role": "MOBILE_DEV",
+    "message": "Tôi đã học Flutter 1 năm và muốn build app booking hoàn chỉnh.",
+    "status": "ACCEPTED"
+  },
+  {
+    "projectId": "seed-proj-4",
+    "userEmail": "learner.hoa@projecthub.vn",
+    "role": "DESIGNER",
+    "message": "Tôi muốn thiết kế UX/UI cho booking flow trên mobile.",
+    "status": "ACCEPTED"
+  },
+  {
+    "projectId": "seed-proj-6",
+    "userEmail": "learner.linh@projecthub.vn",
+    "role": "CONTENT_CREATOR",
+    "message": "Marketing là chuyên ngành của tôi, tôi muốn làm content strategy cho thương hiệu F&B.",
+    "status": "ACCEPTED"
+  },
+  {
+    "projectId": "seed-proj-6",
+    "userEmail": "learner.mai@projecthub.vn",
+    "role": "VIDEO_EDITOR",
+    "message": "Tôi biết Adobe Premiere và muốn thực hành edit video cho social media.",
+    "status": "PENDING"
+  },
+  {
+    "projectId": "seed-proj-7",
+    "userEmail": "learner.khoa@projecthub.vn",
+    "role": "FULLSTACK_DEV",
+    "message": "Tôi muốn học cách build SaaS product từ A đến Z với tech stack hiện đại.",
+    "status": "PENDING"
+  },
+  {
+    "projectId": "seed-proj-7",
+    "userEmail": "learner.duc@projecthub.vn",
+    "role": "BACKEND_DEV",
+    "message": "Tôi muốn đóng góp phần backend và database cho platform này.",
+    "status": "REJECTED"
+  },
+  {
+    "projectId": "seed-proj-8",
+    "userEmail": "learner.khoa@projecthub.vn",
+    "role": "MOBILE_DEV",
+    "message": "React Native fitness app — đây là loại dự án tôi luôn muốn làm!",
+    "status": "ACCEPTED"
+  },
+  {
+    "projectId": "seed-proj-9",
+    "userEmail": "learner.mai@projecthub.vn",
+    "role": "DESIGNER",
+    "message": "Em đã làm 2 landing page trên Figma và muốn thử một dự án có khách hàng thật.",
+    "status": "ACCEPTED"
+  },
+  {
+    "projectId": "seed-proj-9",
+    "userEmail": "learner.khoa@projecthub.vn",
+    "role": "FRONTEND_DEV",
+    "message": "Em muốn luyện Next.js và tối ưu hiệu năng ảnh.",
+    "status": "ACCEPTED"
+  },
+  {
+    "projectId": "seed-proj-9",
+    "userEmail": "learner.linh@projecthub.vn",
+    "role": "CONTENT_CREATOR",
+    "message": "Em viết nội dung và phụ trách SEO cho website.",
+    "status": "ACCEPTED"
+  },
+  {
+    "projectId": "seed-proj-10",
+    "userEmail": "learner.linh@projecthub.vn",
+    "role": "SCRIPT_WRITER",
+    "message": "Em đã viết kịch bản cho kênh TikTok của câu lạc bộ.",
+    "status": "ACCEPTED"
+  },
+  {
+    "projectId": "seed-proj-10",
+    "userEmail": "learner.mai@projecthub.vn",
+    "role": "VIDEO_EDITOR",
+    "message": "Em dựng video bằng Premiere được khoảng một năm.",
+    "status": "ACCEPTED"
+  },
+  {
+    "projectId": "seed-proj-10",
+    "userEmail": "learner.tuan@projecthub.vn",
+    "role": "CREATIVE_DIRECTOR",
+    "message": "Em muốn thử vai trò định hướng hình ảnh cho cả series.",
+    "status": "ACCEPTED"
+  }
+]

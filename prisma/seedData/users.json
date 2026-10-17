@@ -1,0 +1,82 @@
+[
+  {
+    "email": "admin@projecthub.vn",
+    "password": "Admin@1234",
+    "name": "Admin ProjectHub",
+    "bio": "Quản trị viên hệ thống ProjectHub.",
+    "role": "ADMIN",
+    "isVerified": true
+  },
+  {
+    "email": "mentor.hung@projecthub.vn",
+    "password": "Demo@1234",
+    "name": "Nguyễn Quốc Hùng",
+    "bio": "Senior Full-stack Developer, 8 năm kinh nghiệm với Node.js, React Native và hệ thống cloud. Đã lead 10+ dự án thực tế.",
+    "role": "MENTOR",
+    "isVerified": true
+  },
+  {
+    "email": "mentor.lan@projecthub.vn",
+    "password": "Demo@1234",
+    "name": "Trần Thị Lan",
+    "bio": "UI/UX Designer & Brand Strategist với 6 năm kinh nghiệm làm việc cho startup và agency thiết kế. Chuyên Figma, Design System.",
+    "role": "MENTOR",
+    "isVerified": true
+  },
+  {
+    "email": "mentor.nam@projecthub.vn",
+    "password": "Demo@1234",
+    "name": "Phạm Minh Nam",
+    "bio": "Content Marketing Manager & Video Producer. 5 năm làm brand content cho các thương hiệu lớn. Chuyên chiến lược nội dung và video.",
+    "role": "MENTOR",
+    "isVerified": true
+  },
+  {
+    "email": "learner.hoa@projecthub.vn",
+    "password": "Demo@1234",
+    "name": "Nguyễn Thị Hoa",
+    "bio": "Sinh viên năm 3 ngành CNTT, muốn xây dựng portfolio với các dự án thực tế trước khi đi thực tập.",
+    "role": "LEARNER",
+    "isVerified": true
+  },
+  {
+    "email": "learner.khoa@projecthub.vn",
+    "password": "Demo@1234",
+    "name": "Trần Minh Khoa",
+    "bio": "Fresher Developer yêu thích React Native và Flutter, đang tìm kiếm cơ hội làm dự án cùng team thực tế.",
+    "role": "LEARNER",
+    "isVerified": true
+  },
+  {
+    "email": "learner.mai@projecthub.vn",
+    "password": "Demo@1234",
+    "name": "Lê Thị Mai",
+    "bio": "Sinh viên Thiết kế Đồ họa năm 4, thành thạo Figma và Adobe Suite. Muốn tích lũy kinh nghiệm thực tế qua dự án nhóm.",
+    "role": "LEARNER",
+    "isVerified": true
+  },
+  {
+    "email": "learner.duc@projecthub.vn",
+    "password": "Demo@1234",
+    "name": "Nguyễn Văn Đức",
+    "bio": "Backend Developer học việc, thành thạo Node.js và SQL. Đang tìm cơ hội làm dự án có scale lớn.",
+    "role": "LEARNER",
+    "isVerified": true
+  },
+  {
+    "email": "learner.linh@projecthub.vn",
+    "password": "Demo@1234",
+    "name": "Võ Khánh Linh",
+    "bio": "Sinh viên Marketing năm 3, đam mê content và social media. Muốn thực hành chiến lược nội dung cho dự án thực.",
+    "role": "LEARNER",
+    "isVerified": false
+  },
+  {
+    "email": "learner.tuan@projecthub.vn",
+    "password": "Demo@1234",
+    "name": "Đinh Quang Tuấn",
+    "bio": "Mobile Developer đang học Flutter từ 1 năm. Muốn build một app hoàn chỉnh từ đầu đến cuối trong môi trường team.",
+    "role": "LEARNER",
+    "isVerified": true
+  }
+]

@@ -39,3 +39,18 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+/app/generated/prisma
+
+# keep the template
+!.env.example
+
+# browser automation scratch
+.playwright-mcp/
+
+# AI coding tools
+.claude/
+.serena/
+.github/prompts/
+AGENTS.md
+CLAUDE.md

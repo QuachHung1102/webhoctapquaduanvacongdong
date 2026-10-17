@@ -1,0 +1,191 @@
+[
+  {
+    "id": "seed-proj-1",
+    "slug": "app-quan-ly-chi-tieu-ca-nhan",
+    "title": "App Quản Lý Chi Tiêu Cá Nhân",
+    "description": "Xây dựng ứng dụng mobile giúp người dùng theo dõi thu chi, lập ngân sách và nhận báo cáo tài chính cá nhân trực quan.",
+    "outputGoal": "React Native app hoàn chỉnh với auth, CRUD giao dịch, biểu đồ thống kê và export PDF. Deploy TestFlight + Play Store.",
+    "category": "APP",
+    "status": "IN_PROGRESS",
+    "difficulty": "INTERMEDIATE",
+    "timeline": 6,
+    "maxMembers": 4,
+    "mentorEmail": "mentor.hung@projecthub.vn",
+    "skills": [
+      "React Native",
+      "Node.js",
+      "MongoDB",
+      "Figma"
+    ]
+  },
+  {
+    "id": "seed-proj-2",
+    "slug": "landing-page-startup-edtech",
+    "title": "Landing Page cho Startup EdTech",
+    "description": "Thiết kế và phát triển landing page chuyên nghiệp cho startup giáo dục công nghệ, tối ưu conversion rate và SEO.",
+    "outputGoal": "Landing page live trên Vercel, Lighthouse score > 90, conversion rate form > 5%.",
+    "category": "DESIGN",
+    "status": "RECRUITING",
+    "difficulty": "BEGINNER",
+    "timeline": 4,
+    "maxMembers": 3,
+    "mentorEmail": "mentor.lan@projecthub.vn",
+    "skills": [
+      "Figma",
+      "Next.js",
+      "Tailwind CSS",
+      "SEO"
+    ]
+  },
+  {
+    "id": "seed-proj-3",
+    "slug": "saas-quan-ly-task-nhom",
+    "title": "SaaS Tool Quản lý Task Nhóm",
+    "description": "Xây dựng ứng dụng SaaS giúp team nhỏ quản lý task, sprint và tiến độ dự án theo phương pháp Agile.",
+    "outputGoal": "SaaS app với auth, workspace, kanban board, sprint planning và báo cáo. Deploy trên Vercel + Railway.",
+    "category": "PRODUCT",
+    "status": "IN_PROGRESS",
+    "difficulty": "ADVANCED",
+    "timeline": 8,
+    "maxMembers": 4,
+    "mentorEmail": "mentor.hung@projecthub.vn",
+    "skills": [
+      "Next.js",
+      "Prisma",
+      "PostgreSQL",
+      "Stripe"
+    ]
+  },
+  {
+    "id": "seed-proj-4",
+    "slug": "app-dat-lich-hen-salon",
+    "title": "App Đặt Lịch Hẹn Salon",
+    "description": "Mobile app cho phép khách hàng đặt lịch hẹn, xem stylist và nhận thông báo tự động cho salon tóc.",
+    "outputGoal": "Flutter app hoàn chỉnh với booking flow, push notification, admin dashboard cho salon.",
+    "category": "APP",
+    "status": "COMPLETED",
+    "difficulty": "INTERMEDIATE",
+    "timeline": 7,
+    "maxMembers": 4,
+    "mentorEmail": "mentor.hung@projecthub.vn",
+    "skills": [
+      "Flutter",
+      "Firebase",
+      "Node.js",
+      "Figma"
+    ]
+  },
+  {
+    "id": "seed-proj-5",
+    "slug": "ecommerce-fashion-boutique",
+    "title": "E-commerce Fashion Boutique",
+    "description": "Thiết kế và phát triển website thương mại điện tử thời trang với UX mua sắm tối ưu và tích hợp thanh toán.",
+    "outputGoal": "Website Shopify tuỳ biến hoàn toàn, tích hợp Stripe payment, responsive trên mobile.",
+    "category": "DESIGN",
+    "status": "UPCOMING",
+    "difficulty": "INTERMEDIATE",
+    "timeline": 6,
+    "maxMembers": 4,
+    "mentorEmail": "mentor.lan@projecthub.vn",
+    "skills": [
+      "Figma",
+      "Shopify",
+      "UI/UX"
+    ]
+  },
+  {
+    "id": "seed-proj-6",
+    "slug": "chien-luoc-content-video-social",
+    "title": "Chiến Lược Content & Video Social Media",
+    "description": "Xây dựng toàn bộ chiến lược nội dung và sản xuất video cho một thương hiệu F&B local, bao gồm TikTok, Instagram và YouTube Shorts.",
+    "outputGoal": "Content calendar 3 tháng, 12 video TikTok, 4 YouTube Shorts, branding kit đầy đủ.",
+    "category": "VIDEO",
+    "status": "RECRUITING",
+    "difficulty": "BEGINNER",
+    "timeline": 3,
+    "maxMembers": 3,
+    "mentorEmail": "mentor.nam@projecthub.vn",
+    "skills": [
+      "Video Editing",
+      "Adobe Premiere",
+      "Canva",
+      "TikTok Marketing"
+    ]
+  },
+  {
+    "id": "seed-proj-7",
+    "slug": "platform-portfolio-dev",
+    "title": "Platform Portfolio cho Developer",
+    "description": "Xây dựng nền tảng web cho developer tạo và chia sẻ portfolio cá nhân, tích hợp GitHub và hiển thị dự án đẹp mắt.",
+    "outputGoal": "Web app với custom domain, GitHub OAuth, responsive portfolio templates, SEO tốt.",
+    "category": "PRODUCT",
+    "status": "RECRUITING",
+    "difficulty": "ADVANCED",
+    "timeline": 10,
+    "maxMembers": 5,
+    "mentorEmail": "mentor.hung@projecthub.vn",
+    "skills": [
+      "Next.js",
+      "PostgreSQL",
+      "TypeScript",
+      "Tailwind CSS"
+    ]
+  },
+  {
+    "id": "seed-proj-8",
+    "slug": "app-theo-doi-suc-khoe-fitness",
+    "title": "App Theo Dõi Sức Khoẻ & Fitness",
+    "description": "Mobile app giúp người dùng lập kế hoạch tập luyện, theo dõi calories và tiến độ sức khoẻ hàng ngày.",
+    "outputGoal": "React Native app với workout planner, meal tracker, progress charts và wearable integration (optional).",
+    "category": "APP",
+    "status": "REVIEWING",
+    "difficulty": "INTERMEDIATE",
+    "timeline": 8,
+    "maxMembers": 4,
+    "mentorEmail": "mentor.hung@projecthub.vn",
+    "skills": [
+      "React Native",
+      "Node.js",
+      "PostgreSQL",
+      "Figma"
+    ]
+  },
+  {
+    "id": "seed-proj-9",
+    "slug": "website-portfolio-studio-nhiep-anh",
+    "title": "Website Portfolio cho Studio Nhiếp Ảnh",
+    "description": "Thiết kế và dựng website giới thiệu cho một studio nhiếp ảnh tại Đà Nẵng: thư viện ảnh theo bộ sưu tập, trang đặt lịch chụp và blog hậu trường.",
+    "outputGoal": "Website Next.js đã deploy, điểm Lighthouse trên 90, có trang quản trị nội dung để studio tự cập nhật album.",
+    "category": "DESIGN",
+    "status": "COMPLETED",
+    "difficulty": "BEGINNER",
+    "timeline": 5,
+    "maxMembers": 4,
+    "mentorEmail": "mentor.lan@projecthub.vn",
+    "skills": [
+      "Figma",
+      "Next.js",
+      "Tailwind CSS",
+      "SEO"
+    ]
+  },
+  {
+    "id": "seed-proj-10",
+    "slug": "series-video-huong-nghiep-sinh-vien",
+    "title": "Series Video Hướng Nghiệp cho Sinh Viên",
+    "description": "Sản xuất chuỗi 6 video ngắn phỏng vấn người đi làm trong ngành công nghệ, thiết kế và marketing, phát trên TikTok và YouTube Shorts.",
+    "outputGoal": "6 video hoàn chỉnh kèm kịch bản, lịch đăng và báo cáo lượt xem sau 2 tuần phát hành.",
+    "category": "VIDEO",
+    "status": "COMPLETED",
+    "difficulty": "INTERMEDIATE",
+    "timeline": 6,
+    "maxMembers": 4,
+    "mentorEmail": "mentor.nam@projecthub.vn",
+    "skills": [
+      "Premiere Pro",
+      "After Effects",
+      "Copywriting",
+      "Marketing"
+    ]
+  }
+]

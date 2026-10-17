@@ -1,0 +1,42 @@
+// ─────────────────────────────────────────────────────────────────────────────
+// Review — đánh giá sau khi hoàn thành dự án
+// ─────────────────────────────────────────────────────────────────────────────
+
+/// Đánh giá giữa các thành viên trong cùng một dự án (peer review)
+model Review {
+  id         String   @id @default(cuid())
+  projectId  String
+  reviewerId String   // Người đánh giá
+  revieweeId String   // Người được đánh giá
+  rating     Int      // 1–5 sao
+  comment    String?
+  createdAt  DateTime @default(now())
+
+  project  Project @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  reviewer User    @relation("ReviewsGiven", fields: [reviewerId], references: [id])
+  reviewee User    @relation("ReviewsReceived", fields: [revieweeId], references: [id])
+
+  // Mỗi cặp reviewer–reviewee chỉ đánh giá nhau 1 lần / dự án
+  @@unique([projectId, reviewerId, revieweeId])
+  @@index([revieweeId])  // Đánh giá của tôi
+  @@index([projectId])   // Tất cả review trong dự án
+  @@map("reviews")
+}
+
+/// Đánh giá dành riêng cho mentor từ phía learner
+model MentorReview {
+  id         String   @id @default(cuid())
+  mentorId   String
+  reviewerId String   // Learner đánh giá
+  projectId  String?  // Dự án liên quan (nếu có)
+  rating     Int      // 1–5 sao
+  comment    String?
+  createdAt  DateTime @default(now())
+
+  mentor   User @relation("MentorReviewed", fields: [mentorId], references: [id], onDelete: Cascade)
+  reviewer User @relation("MentorReviewer", fields: [reviewerId], references: [id], onDelete: Cascade)
+
+  @@unique([mentorId, reviewerId, projectId]) // 1 review / mentor-learner-project
+  @@index([mentorId])
+  @@map("mentor_reviews")
+}

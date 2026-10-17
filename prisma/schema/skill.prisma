@@ -1,0 +1,53 @@
+// ─────────────────────────────────────────────────────────────────────────────
+// Skill & Badge — kỹ năng và thành tích người dùng đạt được
+// ─────────────────────────────────────────────────────────────────────────────
+
+/// Kỹ năng kỹ thuật / chuyên môn (e.g. React Native, Figma)
+model Skill {
+  id       String  @id @default(cuid())
+  name     String  @unique
+  category String?          // e.g. "Frontend", "Design", "Mobile"
+
+  projectSkills ProjectSkill[]
+  userSkills    UserSkill[]
+
+  @@map("skills")
+}
+
+/// Kỹ năng của từng user, kèm level thành thạo 1–5
+model UserSkill {
+  userId  String
+  skillId String
+  level   Int    @default(1)
+
+  user  User  @relation(fields: [userId], references: [id], onDelete: Cascade)
+  skill Skill @relation(fields: [skillId], references: [id], onDelete: Cascade)
+
+  @@id([userId, skillId])
+  @@map("user_skills")
+}
+
+/// Badge / huy hiệu thành tích
+model Badge {
+  id          String @id @default(cuid())
+  name        String @unique
+  description String
+  iconUrl     String?
+
+  userBadges UserBadge[]
+
+  @@map("badges")
+}
+
+/// Huy hiệu người dùng đã đạt được
+model UserBadge {
+  userId   String
+  badgeId  String
+  earnedAt DateTime @default(now())
+
+  user  User  @relation(fields: [userId], references: [id], onDelete: Cascade)
+  badge Badge @relation(fields: [badgeId], references: [id], onDelete: Cascade)
+
+  @@id([userId, badgeId])
+  @@map("user_badges")
+}

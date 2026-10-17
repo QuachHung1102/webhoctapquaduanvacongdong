@@ -2,25 +2,140 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #0f172a;
+  --brand: #4f46e5;
+  --brand-deep: #3730a3;
+  --ink: #0b1020;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
+  --color-ink: var(--ink);
+  --font-sans: var(--font-brand), ui-sans-serif, system-ui, sans-serif;
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
+  /* Fixed navbar is 64px tall — keep anchor targets clear of it */
+  scroll-padding-top: 5rem;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3 {
+  text-wrap: balance;
+  letter-spacing: -0.02em;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+/* =====================
+   Animations
+   ===================== */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-float {
+  animation: float 5s ease-in-out infinite;
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+/* =====================
+   Brand utilities
+   One accent only: indigo. Class names kept from the earlier gradient version.
+   ===================== */
+.gradient-text {
+  color: var(--brand);
+}
+
+.gradient-bg {
+  background-color: var(--brand);
+  background-image: radial-gradient(120% 140% at 0% 0%, rgba(255, 255, 255, 0.16), transparent 55%);
+}
+
+.hero-gradient {
+  background-color: #fafaf9;
+  background-image:
+    radial-gradient(ellipse at 12% 0%, rgba(79, 70, 229, 0.09) 0%, transparent 50%),
+    radial-gradient(rgba(15, 23, 42, 0.07) 1px, transparent 1px);
+  background-size: auto, 22px 22px;
+}
+
+/* Dark photo-backed surface used by page heroes and the CTA */
+.ink-surface {
+  background-color: var(--ink);
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+/* =====================
+   Interactive cards
+   ===================== */
+.card-hover {
+  transition: transform 0.25s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.25s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 40px -12px rgba(49, 46, 129, 0.22);
+}
+
+:where(button, a):active {
+  transform: translateY(1px);
+}
+
+/* =====================
+   Decorators
+   ===================== */
+.section-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(148, 163, 184, 0.4), transparent);
+}
+
+/* =====================
+   Custom scrollbar
+   ===================== */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: #f8fafc; }
+::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+
+::selection {
+  background: #c7d2fe;
+  color: #1e1b4b;
+}
+
+:where(a, button, input, select, textarea):focus-visible {
+  outline: 3px solid rgba(79, 70, 229, 0.55);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
 }
